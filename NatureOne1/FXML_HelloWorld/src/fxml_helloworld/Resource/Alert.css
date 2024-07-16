@@ -1,0 +1,36 @@
+.text-flow {
+    -fx-padding-bottom: 10px;
+    /* Jarak antar elemen */
+}
+
+.label {
+    -fx-fill: #2196F3;
+    /* Warna teks label */
+    -fx-font-weight: bold;
+    /* Teks tebal */
+}
+
+.value {
+    -fx-fill: #000000;
+    /* Warna teks nilai */
+}
+
+.alert .content-panel {
+    -fx-background-color: #bcb6b6;
+    /* Warna latar belakang */
+    -fx-border-color: #c3c3c3;
+    /* Warna border */
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    /* Ukuran font */
+}
+
+.alert .header-panel {
+    -fx-background-color: #2196F3;
+    /* Warna latar belakang header */
+    -fx-text-fill: white;
+    /* Warna teks header */
+    -fx-font-weight: bold;
+    /* Teks tebal */
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="984.5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.DocumentsControllerCampaign">
+   <children>
+      <BorderPane fx:id="campaignBorderPane" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="897.0" prefWidth="967.0" styleClass="side-bar2" stylesheets="@Resource/login.css">
+                     <children>
+                        <VBox layoutX="34.0" layoutY="40.0" prefHeight="173.0" prefWidth="627.0">
+                           <children>
+                              <Label text="Fuel the Future" textFill="#292929">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Support Critical Conservation Efforts" textFill="#5c5959">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fill="#7d7d7d" strokeType="OUTSIDE" strokeWidth="0.0" text="By donating, you are not only helping to save the environment but also giving hope for future generations. Let's join hands for a better planet and a sustainable future. Support conservation projects now and become a hero for our planet!" wrappingWidth="680.6927795410156">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="campaignContainer" layoutX="22.0" layoutY="249.0" prefHeight="588.0" prefWidth="924.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

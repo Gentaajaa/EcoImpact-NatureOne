@@ -1,0 +1,60 @@
+.project-box {
+    -fx-background-color: #aebce9;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+    -fx-margin: 0 0 10px 0;
+    -fx-spacing: 15px;
+}
+
+.project-name {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.project-description {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+    -fx-wrap-text: true;
+}
+
+.project-target {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2196F3;
+}
+
+.project-completion {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+/* New styles for positioning */
+.project-container {
+    -fx-display: flex;
+    -fx-flex-direction: row;
+    -fx-align-items: center;
+}
+
+.project-details {
+    -fx-display: flex;
+    -fx-flex-direction: column;
+    -fx-flex-grow: 1;
+    -fx-spacing: 25px;
+}
+
+.project-actions {
+    -fx-display: flex;
+    -fx-flex-direction: row;
+    -fx-spacing: 20px;
+}
+
+.project-progress {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 150px;
+    -fx-margin-left: 20px;
+}

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="mainArticlePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="984.5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.DocumentsControllerArticle">
+   <children>
+      <ScrollPane fx:id="contentSelectionPane" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1600.0" prefWidth="968.0" styleClass="side-bar2" stylesheets="@Resource/login.css">
+               <children>
+                  <VBox layoutX="42.0" layoutY="46.0" prefHeight="103.0" prefWidth="605.0">
+                     <children>
+                        <HBox prefHeight="44.0" prefWidth="605.0">
+                           <children>
+                              <Label text="Connect with Nature Through">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Nature" textFill="#01b2d7">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="One" textFill="WHITE">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Text fill="#383838" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Featured Articles and Compelling Stories">
+                           <font>
+                              <Font name="Ebrima" size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <ToggleButton fx:id="btnArticleSatu" layoutX="42.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleToggleButton" prefHeight="270.0" prefWidth="895.0" styleClass="card-content" stylesheets="@Resource/login.css">
+                     <graphic>
+                        <Pane prefHeight="245.0" prefWidth="807.0" styleClass="artikel-photo-wraping" stylesheets="@Resource/login.css">
+                           <children>
+                              <VBox layoutX="422.0" layoutY="30.0" prefHeight="201.0" prefWidth="399.0">
+                                 <children>
+                                    <Label text="Article Title:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fill="#626262cc" strokeType="OUTSIDE" strokeWidth="0.0" text="Pemberdayaan Sumber Daya Alam melalui Konservasi Taman Nasional Baluran" wrappingWidth="406.986328125">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Label text="Writer:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Excelline Ciello" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Release Date:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="27 May 2024" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Pane layoutX="14.0" layoutY="13.0" prefHeight="237.0" prefWidth="349.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="202.0" fitWidth="321.0" layoutX="23.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Resource/Bahan%20Artikel/BahanArtieklSatu.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </graphic></ToggleButton>
+                  <ToggleButton fx:id="btnArticleDua" layoutX="42.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleToggleButton" prefHeight="270.0" prefWidth="895.0" styleClass="card-content" stylesheets="@Resource/login.css" AnchorPane.topAnchor="520.0">
+                     <graphic>
+                        <Pane prefHeight="245.0" prefWidth="807.0" styleClass="artikel-photo-wraping" stylesheets="@Resource/login.css">
+                           <children>
+                              <VBox layoutX="422.0" layoutY="30.0" prefHeight="201.0" prefWidth="399.0">
+                                 <children>
+                                    <Label text="Article Title:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fill="#626262cc" strokeType="OUTSIDE" strokeWidth="0.0" text="konservasi adalah Upaya Perlindungan" wrappingWidth="314.986328125">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Label text="Writer:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="LindungiHutan" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Release Date:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="21 February2022" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Pane layoutX="14.0" layoutY="13.0" prefHeight="237.0" prefWidth="349.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="184.0" fitWidth="327.0" layoutX="11.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Resource/Bahan%20Artikel/BahanArtikelDua.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="btnArticleTiga" layoutX="42.0" layoutY="867.0" mnemonicParsing="false" onAction="#handleToggleButton" prefHeight="270.0" prefWidth="895.0" styleClass="card-content" stylesheets="@Resource/login.css" AnchorPane.topAnchor="867.0">
+                     <graphic>
+                        <Pane prefHeight="245.0" prefWidth="807.0" styleClass="artikel-photo-wraping" stylesheets="@Resource/login.css">
+                           <children>
+                              <VBox layoutX="422.0" layoutY="30.0" prefHeight="201.0" prefWidth="399.0">
+                                 <children>
+                                    <Label text="Article Title:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fill="#626262cc" strokeType="OUTSIDE" strokeWidth="0.0" text="Ekosentrisme, Seni Merawat Lingkungan Melalui Akal" wrappingWidth="406.986328125">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Label text="Writer:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Rizki Mubarok" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Release Date:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="2 November 2024" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Pane layoutX="14.0" layoutY="13.0" prefHeight="237.0" prefWidth="349.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="181.0" fitWidth="320.0" layoutX="15.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Resource/Bahan%20Artikel/BahanArtikelTiga.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="btnArticleEmpat" layoutX="42.0" layoutY="1225.0" mnemonicParsing="false" onAction="#handleToggleButton" prefHeight="270.0" prefWidth="895.0" styleClass="card-content" stylesheets="@Resource/login.css" AnchorPane.topAnchor="1225.0">
+                     <graphic>
+                        <Pane prefHeight="245.0" prefWidth="807.0" styleClass="artikel-photo-wraping" stylesheets="@Resource/login.css">
+                           <children>
+                              <VBox layoutX="422.0" layoutY="30.0" prefHeight="201.0" prefWidth="399.0">
+                                 <children>
+                                    <Label text="Article Title:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fill="#626262cc" strokeType="OUTSIDE" strokeWidth="0.0" text="Ekoeduwisata Konservasi Mangrove di Baros, Bantul" wrappingWidth="378.3197021484375">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Label text="Writer:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Dedi Wijayanti " textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Release Date:" textFill="#535353">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="20 December 2018" textFill="#626262cc">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Pane layoutX="14.0" layoutY="13.0" prefHeight="237.0" prefWidth="349.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="189.0" fitWidth="316.0" layoutX="17.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Resource/Bahan%20Artikel/BahanArtikelEmpat.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </ToggleButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="kontenPaneSatu" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1400.0" prefWidth="968.0">
+               <children>
+                  <ImageView fitHeight="648.0" fitWidth="968.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resource/Bahan%20Artikel/BahanArtieklSatu.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="-4.0" layoutY="236.0" prefHeight="1400.0" prefWidth="972.0" stylesheets="@Resource/login.css">
+                     <children>
+                        <VBox layoutX="59.0" layoutY="25.0" prefHeight="150.0" prefWidth="569.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pemberdayaan Sumber Daya Alam melalui Konservasi Taman Nasional Baluran" wrappingWidth="531.9909057617188">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="86.0" prefWidth="569.0">
+                                 <children>
+                                    <Label text="Excelline Ciello" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="|" textFill="#7d7d7d">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" top="8.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="27 May 2024" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Line endX="250.0" layoutX="572.0" layoutY="165.0" startX="-422.8333435058594" stroke="#7d7878" strokeWidth="3.0" />
+                        <TextArea layoutX="22.0" layoutY="222.0" prefHeight="904.0" prefWidth="936.0" style="-fx-border-color: rgba(55, 54, 54, 0.592);" text="Pernahkah kalian berkunjung ke salah satu ekowisata yang ada di Indonesia, dan bagaimana kesan kalian terhadap ekowisata yang &#10;Anda kunjungi ? Pernahkah kalian terpikirkan apa saja sumber daya alam yang dapat dimanfaatkan dan dilestarikan di tempat wisata &#10;yang ada di Indonesia ?. Mari kita bahas dan pelajari aspek&#10;apa saja yang ada disetiap tempat wisata alam.&#10;&#10;Ekowisata adalah suatu bentuk perjalanan wisata ke area alami yang dilakukan dengan tujuan mengkonservasi lingkungan dan melestarikan &#10;kehidupan dan kesejahteraan penduduk setempat, Dengan begitu terdapat beberapa aspek fungsi ekowisata&#10;yang ada di setiap daerahnya. Ayo kita bahas satu -- satu aspek tersebut !&#10;&#10;Jadi teman -- teman, harini saya akan menjelaskan tentang salah satu ekowisata yang berada di daerah Situbondo, Jawa Timur &#10;yaitu Taman Nasional Baluran atau dikenal dengan nama lain &quot;Little Afrika&quot;. Taman nasional adalah sebuah kawasan yang digunakan &#10;khusus untuk melindungi berbagai macam ekosistem flora dan fauna yang ada di dalamnya. Salah satunya Taman Nasional Baluran ini, &#10;menurut Kementerian Lingkungan Hidup dan Kehutanan (KLHK) terdapat sekitar 715 jenis flora, 28 jenis mamalia, 234 jenis burung, &#10;358 jenis ikan yang hidup di Taman Nasional Baluran. Luas taman ini mencapai sekitar 250 km atau setara dengan 25.000 ha, &#10;jadi taman ini memiliki luasan yang lebar untuk tempat tinggal para satwa di dalamnya. Taman ini juga menyuguhkan pemandangan &#10;hamparan yang indah dan juga gunung baluran yang membuat pemandangan taman ini menjadi lebih indah lagi untuk di kunjungi &#10;oleh para wisatawan baik domestik maupun mancanegara.&#10;&#10;Selanjutnya mari kita bahas apa saja aspek yang mencakup di Kawasan Taman Nasional Baluran ini. Pertama -- tama mari kita bahas &#10;aspek konservasi alamnya, Taman Nasional Baluran merupakan wilayah konservasi berbagai flora dan fauna tetapi pada dasarnya taman &#10;ini difokuskan untuk perlindungan habitat dan populasi Banteng Jawa (Bos Javanicus) dan Macan Tutul Jawa (Panthera pardus melas). &#10;Sebagai wilayah konservasi tentunya taman ini memiliki fungsi konservasi yaitu sebagai rumah berbagai jenis flora dan fauna di dalamnya &#10;dan juga untuk menjaga kelestarian alam dan keseimbangan lingkungan sekitar.&#10;&#10;Lalu, bagaimana aspek pemberdayaan sosial budaya ekonomi masyarakat lokal di sekitarnya?&#10;&#10;Taman Nasional Baluran dapat meningkatkan pemberdayaan masyarakat lokal di sekitar taman dengan membantu meningkatkan kualitas &#10;hidup mereka melalui akses yang lebih baik ke pendidikan, kesehatan, dan infrastruktur serta meningkatkan pelestarian budaya lokal sekitar&#10;Taman Nasional Baluran. Selain itu, ketersediaan lapangan pekerjaan bagi masyarakat sekitar sebagai pekerja di Taman Nasional Baluran.&#10;&#10;Yang terakhir adalah aspek Pembelajaran dan Pendidikan, apakah Taman Nasional Baluran dapat menjadi akses memperoleh pengetahuan &#10;bagi wisatawan maupun masyarakat sekitar ? &#10;&#10;Jadi teman -- teman, Taman Nasional Baluran bukan hanya sebagai tempat konservasi ataupun tempat wisata saja melainkan juga merupakan &#10;kawasan pelestarian alam yang mempunyai ekosistem asli dikelola dengan sistem zonasi yang dimanfaatkan untuk tujuan penelitian, ilmu &#10;pengetahuan, pendidikan, menunjang budidaya, pariwisata dan rekreasi. Dengan begitu, semua orang yang berkunjung dapat memperoleh &#10;pengetahuan tentang pemanfaatan sumber daya alam dan ekosistemnya.&#10;&#10;Jadi, teman -- teman sekarang tahu kalau setiap tempat wisata alam yang ada ini memiliki peran yang penting bagi kesejahteraan sumber &#10;daya alam disekitarnya. Oleh karena itu kita patut menjaga dan melestarikan sumber daya alam yang ada di sekitar kita, dengan begitu &#10;keberlangsungan hidup makhluk hidup dapat terjaga dengan baik.&#10;">
+                           <font>
+                              <Font name="Ebrima" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <styleClass>
+                        <String fx:value="side-bar2" />
+                        <String fx:value="content-article" />
+                     </styleClass>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="kontenPaneDua" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2100.0" prefWidth="968.0">
+               <children>
+                  <ImageView fitHeight="648.0" fitWidth="968.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resource/Bahan%20Artikel/BahanArtikelDua.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="-4.0" layoutY="236.0" prefHeight="2100.0" prefWidth="972.0" stylesheets="@Resource/login.css">
+                     <children>
+                        <VBox layoutX="59.0" layoutY="25.0" prefHeight="150.0" prefWidth="569.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Konservasi adalah Upaya Perlindungan" wrappingWidth="531.9909057617188">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="86.0" prefWidth="569.0">
+                                 <children>
+                                    <Label text="LindungiHutan" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="|" textFill="#7d7d7d">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" top="8.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="21 February 2024" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Line endX="250.0" layoutX="572.0" layoutY="165.0" startX="-422.8333435058594" stroke="#7d7878" strokeWidth="3.0" />
+                        <TextArea layoutX="22.0" layoutY="222.0" prefHeight="1618.0" prefWidth="936.0" style="-fx-border-color: rgba(55, 54, 54, 0.592);" text="Konservasi memiliki arti sempit perlindungan. Istilah “konservasi” berasal dari kata conservation yang mengandung makna kata con- (together) &#10;dan servare (keep/save) yang memiliki pengertian mengenai upaya memelihara apa yang kita punya (keep/save what you have) dengan &#10;bijaksana (wise use).&#10;&#10;Sedangkan dalam arti luas, pengertian konservasi adalah upaya, langkah dan metode pengelolaan dan penggunaan biosfer secara bijaksana &#10;agar memperoleh keuntungan terbesar secara lestari untuk generasi sekarang dengan tetap terpelihara potensi untuk memenuhi kebutuhan &#10;dan aspirasi yang akan datang.&#10;&#10;Penggunaan sumber daya alam untuk memenuhi kebutuhan manusia dalam jumlah dan waktu yang lama menyebabkan munculnya konsep &#10;konservasi. Harapannya, dengan tindakan konservasi yang tepat dapat menjaga kesejahteraan manusia secara berkelanjutan.&#10;&#10;Cakupan konservasi menurut International Union for Conservation of Nature and Natural Resources (IUCN) meliputi manajemen &#10;udara, air, tanah, mineral ke organisme hidup termasuk manusia. Tujuan utamanya yaitu tercipta kualitas kehidupan manusia yang &#10;meningkat. Langkah-langkah termasuk dalam kegiatan manajemen konservasi yaitu survei, penelitian, administrasi, preservasi, pendidikan, &#10;pemanfaatan dan latihan.&#10;&#10;Konservasi Sumber Daya&#10;Pemanfaatan sumber daya oleh manusia untuk memenuhi kebutuhan tidak bisa dilakukan begitu saja, perlu adanya pembatasan dalam &#10;penggunaan sumber daya agar mengurangi tekanan pada persediaan yang sumber daya yang terbatas.&#10;&#10;Apabila manusia dibiarkan untuk mengonsumsi barang dan jasa secara semena-mena, keberlangsungan dan kualitas sumber daya yang &#10;dipakai akan berkurang atau hilang di masa depan.&#10;&#10;Tujuan Konservasi&#10;Untuk mewujudkan langkah konservasi yang tepat, kita perlu menentukan strategi dalam pelaksanaannya. Salah satu cara sebelum &#10;menyusun strategi konservasi adalah dengan mengetahui tujuan konservasi. Setelah memahami tujuan konservasi, maka pelaksanaannya &#10;dapat dilakukan dengan jelas dan terarah.&#10;&#10;Dalam Strategi Konservasi Dunia oleh IUCN 1980, tujuan-tujuan konservasi adalah:&#10;&#10;Konservasi bertujuan untuk memelihara proses ekologi penting dan sistem pendukung kehidupan,&#10;Melestarikan keanekaragaman genetik, Upaya konservasi dilakukan guna memastikan pemanfaatan spesies dan ekosistem yang berkelanjutan.&#10;Secara umum, tujuan konservasi adalah sebagai berikut:&#10;&#10;Memelihara dan melindungi tempat-tempat yang dianggap berharga agar tidak hancur, berubah atau punah,&#10;Melindungi benda-benda cagar alam yang dilakukan secara langsung seperti membersihkan, memelihara, dan memperbaiki secara &#10;fisik atau dari faktor lingkungan yang dapat merusak benda-benda tersebut, Memanfaatkan kembali bangunn atau tempat yang fungsinya&#10;sudah tidak dipergunakan dengan cara memperbarui atau mengembalikan fungsinya seperti semula sehingga dapat mencegah terjadinya &#10;kegiatan pembukaan baru yang bersifat mengalihkan fungsi awalnya. Pemerintah melalui Keputusan Presiden Republik Indonesia Nomor 22 &#10;Tahun 2009 menetapkan Hari Konservasi Alam Nasional setiap tanggal 10 Agustus. Peringatan ini merupakan salah satu upaya dalam &#10;mengingatkan masyarakat bahwa konservasi adalah bagian penting dalam pembangunan.&#10;&#10;Sehingga konservasi alam senantiasa berlanjut dan dipertahankan untuk pemenuhan kebutuhan di masa sekarang dan mendatang.&#10;&#10;Manfaat Konservasi&#10;Seperti ruang lingkup konservasi yang beragam, manfaat konservasi juga bervariasi. Fungsi dan kegunaan konservasi dapat dibagi menjadi 2 &#10;aspek yaitu manfaat ekologi dan ekonomi.&#10;&#10;Berikut ini penjelasan masing-masing aspeknya yaitu:&#10;&#10;1. Manfaat Konservasi Secara Ekologi&#10;Manfaat konservasi yang bisa diperoleh terhadap ekosistem, diantaranya sebagai berikut:&#10;&#10;Melindungi kekayaan ekosistem alam dan memelihara proses–proses ekologi maupun keseimbangan ekosistem secara berkelanjutan,&#10;Melindungi berbagai spesies flora dan fauna yang langka atau hampir punah,&#10;Melindungi ekosistem dari kerusakan yang disebabkan oleh faktor alam, mikroorganisme dan lain-lain,&#10;Menjaga kualitas lingkungan supaya tetap terjaga, dan lain sebagainya,&#10;Mencegah kerugian yang diakibatkan oleh suatu sistem penyangga kehidupan. Contohnya ketika adanya kerusakan hutan lindung, maka &#10;akan menimbulkan kerusakan yang berdampak pada bencana.&#10;&#10;2. Manfaat Konservasi Secara Ekonomi&#10;Konservasi juga dapat dipandang dari segi ekonomi dari segi ekonomi berarti mencoba mengalokasikan sumber daya alam untuk sekarang, &#10;dan terus berlanjut hingga masa mendatang.&#10;&#10;Manfaat ekonomi dari upaya konservasi adalah sebagai berikut:&#10;&#10;Manusia dalam memenuhi kebutuhan hidupnya memerlukan sumber daya alam, tetapi karena adanya keterbatasan dari kuantitas maupun &#10;kualitas diperlukan pengelolaan sumber daya alam yang baik dan bijaksana.Pembangunan yang terus berlanjut tidak dapat terhindarkan &#10;dari sumber daya yang ada. Konsep pembangunan berkelanjutan timbul dan berkembang karena timbulnya kesadaran bahwa pembangunan &#10;ekonomi dan sosial tidak dapat dilepaskan dari kondisi sumber daya alam dan lingkungan hidup. Konservasi akan menjaga dan mengelola &#10;SDA, sehingga menjadi penting dan strategis dalam konteks pembangunan nasional. Jika kondisi lingkungan menurun maka akan berdampak &#10;juga pada perekonomian masyarakat. Contohnya jika semakin rusaknya DAS, hilangnya sumber-sumber air dan semakin menurunnya kualitas &#10;air sungai dan laut. Dampak langsung yang terlihat nyata merugikan seperti terjadinya bencana kekeringan, banjir dan longsor di berbagai &#10;daerah yang menelan korban manusia, merusak/mengganggu fungsi infrastruktur yang sudah terbangun, dan memperburuk akses terhadap &#10;air bersih.&#10;">
+                           <font>
+                              <Font name="Ebrima" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <styleClass>
+                        <String fx:value="side-bar2" />
+                        <String fx:value="content-article" />
+                     </styleClass>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="kontenPaneTiga" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1590.0" prefWidth="968.0">
+               <children>
+                  <ImageView fitHeight="648.0" fitWidth="968.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resource/Bahan%20Artikel/BahanArtikelTiga.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="-4.0" layoutY="236.0" prefHeight="1590.0" prefWidth="972.0" stylesheets="@Resource/login.css">
+                     <children>
+                        <VBox layoutX="59.0" layoutY="25.0" prefHeight="150.0" prefWidth="569.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ekosentrisme, Seni Merawat Lingkungan Melalui Akal" wrappingWidth="531.9909057617188">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="86.0" prefWidth="569.0">
+                                 <children>
+                                    <Label text="Rizki Mubarok" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="|" textFill="#7d7d7d">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" top="8.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="2 November 2023" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Line endX="250.0" layoutX="572.0" layoutY="165.0" startX="-422.8333435058594" stroke="#7d7878" strokeWidth="3.0" />
+                        <TextArea layoutX="22.0" layoutY="222.0" prefHeight="1088.0" prefWidth="936.0" style="-fx-border-color: rgba(55, 54, 54, 0.592);" text="Berdasarkan data yang diambil oleh Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan (PKTL) KLHK, hasil pemantauan hutan &#10;Indonesia Tahun 2019, luas lahan berhutan seluruh daratan Indonesia adalah 94,1 juta ha atau 50,1% dari total daratan. Hal tersebut menjadikan &#10;Indonesia memiliki kekayaan sumber daya alam flora dan fauna yang melimpah.&#10;&#10;Belum lagi melihat adanya proyek infrastruktur Ibukota Nusantara yang sedang masa pembangunan di Kalimantan. Hal ini tentu sangat &#10;berdampak bagi wilayah hutan yang ada disana. Terlebih, Kalimantan juga merupakan dinobatkan sebagai paru-paru dunia di karena kan &#10;luas hutan nya merupakan terbesar kedua di dunia. Akan tetapi, kondisi geografis yang sangat melimpah ini kurang dimanfaatkan dengan &#10;baik, sehingga makin bertambahnya tahun luas wilayah hutan yang ada di Indonesia mengalami pengurangan lahan atau yang biasa di sebut &#10;dengan deforestasi alam.&#10;&#10;Guiness Book of The Record bahkan sampai menganugrahi Indonesia sebagai negara yang laju kerusakan hutannya tercepat di dunia. &#10;Faktor utama deforestasi ini sebenarnya banyak, bisa karena adanya pembakaran lahan dengan sengaja yang tujuan nya adalah konversi &#10;atau pengalihan lahan dari kawasan hutan menjadi kawasan sawit. Bisa juga terjadi karena adanya penambangan secara ilegal yang membuat &#10;pepohonan dibabat habis. Hal ini menjadikan wilayah hutan di Indonesia mengalami kerusakan yang menyebabkan terjadi bencana seperti &#10;kebakaran hutan dan lahan (Karhutla), kaburnya satwa dari hutan ke pemukiman warga, kekurangan air bersih, peningkatan emisi gas karbon, &#10;pemanasan global, dan mengurangi biodiversitas.&#10;&#10;Lalu bagaimana?&#10;Menjaga hutan sama saja menjaga kelestarian alam. Sebelum kita beranjak lebih jauh tentang bagaimana cara menjaga hutan, tindakan apa &#10;yang bisa dilakukan atau sebagainya, hal yang perlu di ketahui oleh kawan kawan adalah makna hutan bagi manusia itu sendiri.&#10;&#10;Pemahaman tentang &quot;hutan adalah bagian kita&quot; adalah hal yang perlu ditanamkan sejak dini. Dalam perkembangan pemikirannya, manusia &#10;kerap kali menjadi tokoh antagonis yang ingin merebut seluruh kekayaan alam yang berada di lingkungan sekitar. Hal inilah yang menjadikan &#10;hutan tidak dianggap penting. Padahal, hutan merupakan makhluk hidup juga, sama seperti manusia yang perlu dijaga dan di dirawat. Pemikiran &#10;ini kemudian disebut dengan pemikiran ekosentrisme.&#10;&#10;Apa itu Ekosentrisme?&#10;Ekosentrisme merupakan suatu paham dari perkembangan paham biosentrisme. Jika biosentrisme merupakan paham yang menitikberatkan &#10;pada subjek ekosistem biotik yang bernilai, ekosentrisme menitikberatkan keseimbangan ekologis antara manusia dengan lingkungan &#10;merupakan dua subjek yang sama bernilainya dan perlu dijaga keduanya. Karena kedua nya saling berkaitan dan saling membutuhkan &#10;di kehidupan sehari hari. Ekosentrisme juga tidak menitikberatkan satu nilai dengan nilai lainnya yang saling bertumpukan, karena secara  &#10;fundamental juga keduanya sama sama memiliki nilai yang sangat berharga&#10;&#10;Bayangkan saja, hampir segala produk yang ada di tengah tengah kita berasal dari alam. Sandang, pangan dan papan, semuanya pasti &#10;bersinggungan langsung dengan alam. Bahkan secanggih apapun teknologi, sumber daya alam pasti tetap terpakai dan dibutuhkan.&#10;&#10;Paham Ekosentrisme juga memiliki beberapa tujuan. Dari segi pandangan etis, adanya paham ini mendorong manusia secara moral &#10;untuk bisa melestarikan alam dan menjaga ekosistem di lingkungan sama seperti dia merawat dirinya sendiri. Secara filosofisnya, &#10;Ekosentrisme membuka pikiran manusia untuk bisa memposisikan ekosistem yang ada di alam seperti manusia. Selain itu, Ekosentrisme &#10;bertujuan sebagai patokan manusia dalam mencapai pembangunan berkelanjutan&#10;&#10;Tak di pungkiri, setiap tahunnya populasi manusia di dunia akan selalu bertambah. Hal ini pasti akan berdampak pada kawasan yang &#10;ada di tengah tengah kita. Penggunaan sumber daya alam pun akan semakin banyak, oleh karena itu perlu adanya pengerem dari &#10;tindakan yang akan dilakukan manusia untuk mencapai kebutuhan dan kesejahteraan. Oleh karena itu, kawan kawan yang bergerak &#10;di lingkungan sering menyebutnya dengan pembangunan keberlanjutan yang adil. Dalam artian, meskipun kebutuhan manusia itu banyak, &#10;akan tetapi wilayah hutan yang di pergunakan hanya seperlunya saja, dan apabila wilayah tersebut sudah di babat maka perlu adanya &#10;penanaman kembali supaya pohon pohon yang di tebang bisa tumbuh di kemudian hari.&#10;&#10;Bagi saya pribadi, paham Ekosentrisme menjadikan pondasi awal bagi anak anak dalam menjaga lingkungan. Tanamkan pada kawan &#10;kawan sekitar juga tentang esensi tersebut, sebab jika hutan terus dibabat habis, tanah terus dikeruk, dampaknya akan kita rasakan juga">
+                           <font>
+                              <Font name="Ebrima" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <styleClass>
+                        <String fx:value="side-bar2" />
+                        <String fx:value="content-article" />
+                     </styleClass>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="kontenPaneEmpat" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1150.0" prefWidth="968.0">
+               <children>
+                  <ImageView fitHeight="648.0" fitWidth="968.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resource/Bahan%20Artikel/BahanArtikelEmpat.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="-4.0" layoutY="236.0" prefHeight="1150.0" prefWidth="972.0" stylesheets="@Resource/login.css">
+                     <children>
+                        <VBox layoutX="59.0" layoutY="25.0" prefHeight="150.0" prefWidth="569.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ekoeduwisata Konservasi Mangrove di Baros, Bantul" wrappingWidth="531.9909057617188">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="86.0" prefWidth="569.0">
+                                 <children>
+                                    <Label text="Dedi Wijayanti " textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="|" textFill="#7d7d7d">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" top="8.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="20 December 2018" textFill="#7d7d7d">
+                                       <font>
+                                          <Font name="Ebrima Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Line endX="250.0" layoutX="572.0" layoutY="165.0" startX="-422.8333435058594" stroke="#7d7878" strokeWidth="3.0" />
+                        <TextArea layoutX="22.0" layoutY="222.0" prefHeight="551.0" prefWidth="936.0" style="-fx-border-color: rgba(55, 54, 54, 0.592);" text="Hutan mangrove di kawasan pantai payau adalah sumber daya alam yang sangat penting namun mudah rusak jika tidak dikelola dengan baik. &#10;Di Indonesia, luas hutan mangrove telah menurun drastis dari 3,2 juta hektar pada 1986 menjadi hanya 1,2 juta hektar pada 2012. Dengan &#10;adanya ekoeduwisata mangrove di Pantai Baros, Desa Tirtohargo, Kretek, Bantul, Yogyakarta, diharapkan bisa menjadi upaya untuk melestarikan &#10;mangrove dan meningkatkan kesadaran masyarakat terhadap kondisi lingkungan sekitar. Metode yang digunakan dalam pengabdian ini &#10;mencakup analisis situasi masyarakat Dusun Baros, identifikasi masalah yang terkait dengan kegiatan konservasi mangrove, dan pendekatan &#10;sosial. Pendekatan sosial ini tidak hanya dilakukan oleh tim pengusung program, tetapi juga berkolaborasi dengan berbagai pihak seperti &#10;BAPPEDA Kabupaten Bantul, Badan Lingkungan Hidup, Dinas Pariwisata, dan Pemuda Pemudi Dusun Baros (KP2B). Dengan kolaborasi berbagai &#10;pihak ini, diharapkan kesadaran masyarakat terhadap pelestarian hutan mangrove semakin meningkat.&#10;&#10;Indonesia dikenal memiliki kekayaan alam yang melimpah, baik di darat maupun di laut. Jika dikelola dengan baik dan benar, kekayaan ini &#10;dapat menjadi tonggak untuk meningkatkan kesejahteraan masyarakat sekitarnya. Salah satu sumber daya alam di Indonesia yang memiliki &#10;nilai esensial dan ekonomis adalah hutan. Selain berfungsi sebagai paru-paru dunia dan tempat tinggal fauna, hutan juga berfungsi sebagai &#10;sarana pembelajaran berbasis wisata yang memiliki nilai ekonomis bagi pengelolanya. Hal ini penting diperhatikan karena banyak hutan yang &#10;dieksploitasi hanya untuk kepentingan ekonomis. Salah satu kawasan hutan yang bisa dijadikan sarana edukasi dan wisata adalah hutan bakau. &#10;Di Yogyakarta, terdapat dua kawasan hutan bakau, yaitu di Kabupaten Kulonprogo dan Kabupaten Bantul. Kedua hutan ini berfungsi untuk &#10;mengontrol abrasi dan erosi pesisir pantai, serta sebagai objek wisata. Namun, pengelolaannya berbeda. Hutan bakau di Bantul sedang menuju &#10;grand design sebagai kawasan eduekowisata, atau wisata minat khusus berbasis pendidikan. Untuk memastikan keberlanjutan pengembangan &#10;kawasan ini, mangrove di Kabupaten Bantul sudah berbadan hukum, memiliki tata kelola yang terencana, serta sinergi antara pemerintah, &#10;masyarakat, dan organisasi kepemudaan yang fokus mengelola hutan. Kawasan mangrove Baros memiliki potensi yang bagus untuk menjadi &#10;kawasan eduekowisata. Selain berfungsi sebagai hutan pelindung, kawasan ini juga diupayakan untuk menjadi objek wisata minat khusus. &#10;Harapannya, usaha ini mampu memberikan kontribusi nyata bagi penduduk sekitar maupun masyarakat luas, terutama dari segi nilai ekonomis &#10;tanpa menghilangkan fungsi mangrove sebagai hutan pelindung. Pelestarian mangrove Baros harus terus diupayakan semaksimal mungkin untuk &#10;menunjang keberlangsungan ekosistem ideal dan kesejahteraan masyarakat. Hal ini dapat tercapai jika sinergi antara masyarakat dan pemangku &#10;kepentingan sudah dilakukan secara efektif dan efisien.&#10;">
+                           <font>
+                              <Font name="Ebrima" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <styleClass>
+                        <String fx:value="side-bar2" />
+                        <String fx:value="content-article" />
+                     </styleClass>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

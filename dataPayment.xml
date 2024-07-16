@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pembayaran-list>
+        
+    <pembayaran>
+                
+        <namaDepan>Bujang</namaDepan>
+                
+        <namaBelakang>Lapuk</namaBelakang>
+                
+        <jumlah>30000</jumlah>
+                
+        <tanggalTransaksi>2024-07-12</tanggalTransaksi>
+            
+    </pembayaran>
+    
+    <pembayaran>
+        <namaDepan>Akaza</namaDepan>
+        <namaBelakang>Aja</namaBelakang>
+        <jumlah>250000</jumlah>
+        <tanggalTransaksi>2024-07-13</tanggalTransaksi>
+    </pembayaran>
+</pembayaran-list>

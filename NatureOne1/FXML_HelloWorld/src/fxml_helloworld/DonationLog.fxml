@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="984.5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.DocumentsControllerLog">
+   <children>
+      <ScrollPane prefHeight="823.0" prefWidth="985.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1625.0" prefWidth="968.0" styleClass="side-bar2" stylesheets="@Resource/login.css">
+               <children>
+                  <VBox layoutX="61.0" layoutY="30.0" prefHeight="135.0" prefWidth="846.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="307.0" text="Financial Transparency at  " textFill="#434141">
+                           <font>
+                              <Font name="Ebrima Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="29.0" prefWidth="846.0">
+                           <children>
+                              <Label text="Your Fingertips :" textFill="#434141">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Easily Monitor Your Donations" textFill="#4186b7">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Easily view and track donation data, promoting financial transparency to donors." textFill="#867f7f">
+                           <font>
+                              <Font name="Ebrima Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="transactionTable" layoutX="12.0" layoutY="193.0" prefHeight="477.0" prefWidth="943.0" style="-fx-background-color: #bbc8e8; -fx-border-radius: 15;" styleClass="card-content" stylesheets="@Resource/login.css">
+                    <columns>
+                      <TableColumn fx:id="donorName" prefWidth="330.0" text="Donor Name" />
+                      <TableColumn fx:id="dateTransaction" prefWidth="275.33331298828125" text="Transaction Date" />
+                        <TableColumn fx:id="fundsIncoming" prefWidth="336.0000203450521" text="Incoming Funds" />
+                    </columns>
+                  </TableView>
+                  <VBox layoutX="12.0" layoutY="867.0" prefHeight="661.0" prefWidth="943.0" styleClass="card-content" stylesheets="@Resource/login.css">
+                     <children>
+                        <Text fill="#4186b7" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's Check the Current Progress of the Donation Target for the Project" wrappingWidth="354.2838134765625">
+                           <font>
+                              <Font name="Ebrima Bold" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="35.0" left="45.0" top="35.0" />
+                           </VBox.margin>
+                        </Text>
+                        <LineChart fx:id="chartDonation" prefHeight="457.0" prefWidth="943.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </LineChart>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="14.0" layoutY="705.0" prefHeight="56.0" prefWidth="367.0">
+                     <children>
+                        <Button fx:id="btnGarph" mnemonicParsing="false" onAction="#updateChart" prefHeight="45.0" prefWidth="150.0" stylesheets="@Resource/login.css" text="Graph" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="btn-sidebar2" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="Ebrima Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDeleteDonation" mnemonicParsing="false" onAction="#deleteAllData" prefHeight="45.0" prefWidth="150.0" stylesheets="@Resource/login.css" text="End Donation" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="btn-sidebar2" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="65.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Ebrima Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</StackPane>

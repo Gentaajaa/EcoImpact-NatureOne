@@ -1,0 +1,100 @@
+.side-bar1 {
+    -fx-background-color: #254D89;
+}
+
+.side-bar2 {
+    -fx-background-color: #d8d1d1;
+}
+
+.garis-login {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: rgba(109, 109, 109, 0.756);
+}
+
+.garis-login2:hover {
+    -fx-background-color: #c2bfbf9a;
+}
+
+.login-btn {
+    -fx-background-color: #174e70;
+    -fx-background-radius: 20px;
+}
+
+.btn:hover {
+    -fx-background-color: #1a3d65;
+}
+
+.user-choice {
+    -fx-background-color: rgb(72, 133, 170);
+    -fx-background-radius: 50px;
+}
+
+.profile {
+    -fx-background-color: #396EBD;
+    -fx-background-radius: 0 30px 0 30px;
+    -fx-effect: dropshadow(gaussian, rgba(55, 54, 54, 0.592), 5, 0, 5, 5);
+}
+
+.btn-sidebar {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 3px 0;
+    -fx-border-color: rgba(255, 255, 255, 0.756);
+}
+
+.btn-sidebar1:hover {
+    -fx-background-color: #c2bfbf65;
+}
+
+.btn-sidebar2 {
+    -fx-background-color: #396EBD;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(55, 54, 54, 0.592), 5, 0, 5, 5);
+}
+
+.card-content {
+    -fx-background-color: #bbc8e8;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(55, 54, 54, 0.592), 5, 0, 5, 5);
+}
+
+.card-content-label {
+    -fx-background-color: #506F9E;
+    -fx-background-radius: 0 50px 0 15px;
+}
+
+.artikel-photo-wraping {
+    -fx-background-color: #bbc8e8;
+}
+
+.content-article {
+    -fx-background-radius: 25 25px 0 0;
+}
+
+.project-organization {
+    -fx-control-inner-background: #d9d2d2;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 3px;
+}
+
+.table-view {
+    -fx-background-color: #b8bbbd;
+    -fx-border-color: #dcdcdc;
+    -fx-table-header-border-color: #b5afaf;
+}
+
+.payment-card {
+    -fx-background-color: #5b7fdb;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(55, 54, 54, 0.592), 5, 0, 5, 5);
+}
+
+.payment-textfield {
+    -fx-background-radius: 5px;
+    -fx-background-color: #D9D9D9;
+}
+
+.submit-btn {
+    -fx-background-color: #95BBF5;
+    -fx-background-radius: 10px;
+}

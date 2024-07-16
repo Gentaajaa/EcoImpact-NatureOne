@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="984.5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_helloworld.DocumentsControllerProject">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2077.0" prefWidth="967.0" styleClass="side-bar2" stylesheets="@Resource/login.css">
+               <children>
+                  <VBox layoutX="28.0" layoutY="35.0" prefHeight="95.0" prefWidth="617.0">
+                     <children>
+                        <Label text="Let's Create a Project:" textFill="#292929">
+                           <font>
+                              <Font name="Ebrima Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label text="Together Realizing a Green Vision for Our Earth" textFill="#5c5959">
+                           <font>
+                              <Font name="Ebrima Bold" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="26.0" layoutY="148.0" prefHeight="612.0" prefWidth="916.0" styleClass="card-content" stylesheets="@Resource/login.css">
+                     <children>
+                        <HBox prefHeight="20.0" prefWidth="916.0">
+                           <children>
+                              <Label text="Project Name" textFill="#777777">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Donation Target" textFill="#777777">
+                                 <HBox.margin>
+                                    <Insets left="315.0" top="35.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Ebrima Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="916.0">
+                           <children>
+                              <TextField fx:id="projectNameField" prefHeight="50.0" prefWidth="400.0" styleClass="project-organization">
+                                 <HBox.margin>
+                                    <Insets left="45.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Ebrima" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="donationTargetField" prefHeight="50.0" prefWidth="400.0" styleClass="project-organization">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Ebrima" size="16.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Label text="Project Description" textFill="#777777">
+                           <VBox.margin>
+                              <Insets left="45.0" top="55.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Ebrima Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="projectDescriptionField" prefHeight="221.0" prefWidth="831.0" styleClass="project-organization" stylesheets="@Resource/login.css">
+                           <VBox.margin>
+                              <Insets left="45.0" right="40.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Ebrima" size="16.0" />
+                           </font>
+                        </TextArea>
+                        <Label text="Project Progress" textFill="#777777">
+                           <font>
+                              <Font name="Ebrima Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="45.0" top="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="89.0" prefWidth="916.0">
+                           <children>
+                              <TextField fx:id="completionPercentageField" prefHeight="50.0" prefWidth="400.0" styleClass="project-organization" stylesheets="@Resource/login.css">
+                                 <HBox.margin>
+                                    <Insets left="45.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#submitProject" prefHeight="42.0" prefWidth="147.0" style="-fx-background-radius: 10; -fx-background-color: #396EBD;" text="Submit" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="45.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Ebrima Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children></VBox>
+                  <Text fill="#5c5959" layoutX="26.0" layoutY="1005.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Projects That Have Been Created">
+                     <font>
+                        <Font name="Ebrima Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <VBox fx:id="projectsContainer" layoutX="25.0" layoutY="1022.0" prefHeight="1036.0" prefWidth="923.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</StackPane>

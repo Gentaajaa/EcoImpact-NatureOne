@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "FXML_HelloWorld/lib/xstream-1.4.20.jar"
+    ]
+}
